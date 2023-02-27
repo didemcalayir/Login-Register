@@ -1,0 +1,126 @@
+/* Ana özellikleri tanımlama ve özellikleri sıfırlama */
+ 
+body{
+    --color-primary: rgba(225, 156, 72, 0.3);
+    --color-primary-dark: rgba(9, 103, 9, 0.5);
+    --color-secondary: rgba(30, 1, 98, 0.5);
+    --color-success: rgb(18, 96, 18);
+    --color-error:red;
+    --color-main: rgb(2, 86, 2);
+    --color-component:rgb(247, 184, 68);
+    --border-radius: 5px;
+    
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary)), url(bg.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 20px;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Ana Tasiyici */
+.container{
+    width: 400px;
+    max-height: 600px;
+
+}
+
+.form{
+    background-color: white;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(250, 250, 250, 0.9);
+}
+.form__title{
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.form__message{
+    color: var(--color-error);
+}
+.form__input-error-message{
+    color: var(--color-error);
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: 0.5rem;
+}
+.form__input--group{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    justify-content:space-around;
+}
+.form__input--group p{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: .9rem;
+}
+.form__input--group span{
+    color: red;
+}
+
+.form__input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.7rem;
+    background-color: #eee;
+    border: 2px solid #ddd;
+    transition: background 0.3s, border-color 0.3s;
+    outline: none;
+    border-radius: var(--border-radius);
+}
+
+.form__input:focus{
+    border-color: var(--color-main) ;
+    background-color: white;
+}
+
+.form__button{
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    background-color: var(--color-component);
+    border: none;
+    border-radius:var(--border-radius) ;
+}
+.form__button:hover{
+    background-color: var(--color-main);
+    transition: all 0.3s;
+    transform: scale(0.98);
+}
+.form__button:active{
+    transform: scale(0.98);
+}
+.form__link{
+    text-decoration: none;
+    color: var(--color-primary-dark);
+    cursor: pointer;
+    margin-bottom: -10px;
+}
+.form__link:hover{
+    color: var(--color-component);
+}
+.form__text-for-all{
+    display: flex;
+    justify-content: center;
+    margin: 0.7rem;
+    font-size: 15px;
+    
+}
+.form__text-for-all span{
+    color: var(--color-primary-dark);
+}
